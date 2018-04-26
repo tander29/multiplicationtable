@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Multiplication Table</title>
+      <style>
+         .cell {display: inline-block; width: 30px; height: 30px; text-align: right;}
+         .header {background: lightblue;}
+      </style>
+   </head>
+   <body>
+      <h1>Multiplication Table</h1>
+      <script>
+
+        const kylerocks = prompt("Enter your multiplecation table parameters")
+
+
+
+
+         // output the header row
+         document.write('<span class="cell header">X</span>');
+         for(i = 1; i <= kylerocks; i++) {
+            document.write('<span class="cell header">' + i + '</span>');
+         }
+         document.write('<br>');
+
+
+         for(i = 1; i <= kylerocks; i++) {
+            document.write('<span class="cell header">' + i + '</span>');
+                for(let j = 1; j<=kylerocks; j++){
+                    document.write('<span class="cell">' + j*i + '</span>')
+                   
+                }
+                document.write('<br>')  
+         }
+         // TODO: Write two nested for loops to output the rest of the multiplication table
+ 
+
+
+
+
+
+
+
+
+      </script>
+   </body>
+</html>
